@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2010.3.29)  20 APR 2010 23:27
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2010.3.29)  26 APR 2010 01:00
 entering extended mode
  %&-line parsing enabled.
 **\input t2.tex
@@ -588,44 +588,16 @@ Cap\'{\i }tulo 5.
 [9
 
 ]
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `utf8'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.141 dispositivo automático (foto celda o ^^[
-                                               -Y´limitswitch¡ es otro eje...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Unicode char \u8:´ not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.141 ...ositivo automático (foto celda o ^^[-Y´
-                                                  limitswitch¡ es otro ejemplo
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 No file t2.bbl.
 [10] (./t2.aux) ) 
 Here is how much of TeX's memory you used:
- 4346 strings out of 95087
- 56774 string characters out of 1183278
+ 4345 strings out of 95087
+ 56769 string characters out of 1183278
  117547 words of memory out of 1500000
- 7359 multiletter control sequences out of 10000+50000
+ 7358 multiletter control sequences out of 10000+50000
  68154 words of font info for 54 fonts, out of 1200000 for 2000
  42 hyphenation exceptions out of 8191
- 38i,11n,43p,256b,404s stack positions out of 5000i,500n,6000p,200000b,5000s
+ 38i,11n,43p,256b,407s stack positions out of 5000i,500n,6000p,200000b,5000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/tex
 mf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmb
 x10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fo
@@ -633,7 +605,7 @@ nts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb
 ></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type
 1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on t2.pdf (10 pages, 720997 bytes).
+Output written on t2.pdf (10 pages, 721295 bytes).
 PDF statistics:
  334 PDF objects out of 1000 (max. 8388607)
  26 named destinations out of 1000 (max. 131072)
