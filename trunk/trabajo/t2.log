@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2010.3.29)  28 APR 2010 18:30
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2010.2.10)  29 APR 2010 00:02
 entering extended mode
  %&-line parsing enabled.
 **\input t2.tex
@@ -376,10 +376,23 @@ Now handling font encoding PD1 ...
 (/etc/texmf/tex/latex/config/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2006/08/22 v2.4 Connects package keyval with LaTeX options (
-HO)
+(/home/sergio/texmf/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+(/home/sergio/texmf/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+
+(/home/sergio/texmf/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
 )
+(/home/sergio/texmf/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
 Package hyperref Info: Option `colorlinks' set `true' on input line 2238.
 Package hyperref Info: Hyper figures OFF on input line 2288.
 Package hyperref Info: Link nesting OFF on input line 2293.
@@ -480,22 +493,22 @@ Package hyperref Info: Link coloring ON on input line 13.
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
 
-(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
-Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
+(/home/sergio/texmf/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 \c@section@level=\count101
 )
 LaTeX Info: Redefining \ref on input line 13.
 LaTeX Info: Redefining \pageref on input line 13.
- (./t2.out)
-(./t2.out)
+ (./t2.out) (./t2.out)
 \@outlinefile=\write4
 \openout4 = `t2.out'.
 
- (./inc/hyphenations.tex)
-<img/logoesi.pdf, id=63, 598.235pt x 845.1575pt>
+
+(./inc/hyphenations.tex) <img/logoesi.pdf, id=63, 598.235pt x 845.1575pt>
 File: img/logoesi.pdf Graphic file (type pdf)
- <use img/logoesi.pdf>
+
+<use img/logoesi.pdf>
 Overfull \hbox (55.33858pt too wide) in paragraph at lines 21--21
 [][] 
  []
@@ -600,31 +613,32 @@ l.169 \chapter
 Cap\'{\i }tulo 4.
 [9
 
-]
+] [10] [11]
 Cap\'{\i }tulo 5.
-[10
+[12
 
 ]
 No file t2.bbl.
-[11] (./t2.aux) ) 
+[13] (./t2.aux) ) 
 Here is how much of TeX's memory you used:
- 4363 strings out of 95087
- 57057 string characters out of 1183278
- 117635 words of memory out of 1500000
- 7371 multiletter control sequences out of 10000+50000
- 72421 words of font info for 55 fonts, out of 1200000 for 2000
+ 4467 strings out of 95087
+ 58738 string characters out of 1183278
+ 119576 words of memory out of 1500000
+ 7462 multiletter control sequences out of 10000+50000
+ 75457 words of font info for 56 fonts, out of 1200000 for 2000
  42 hyphenation exceptions out of 8191
- 38i,11n,43p,256b,409s stack positions out of 5000i,500n,6000p,200000b,5000s
+ 39i,11n,43p,271b,451s stack positions out of 5000i,500n,6000p,200000b,5000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/tex
 mf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmb
 x10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fo
 nts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb
 ></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type
-1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on t2.pdf (11 pages, 832729 bytes).
+1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmsy10.pfb>
+Output written on t2.pdf (13 pages, 856608 bytes).
 PDF statistics:
- 354 PDF objects out of 1000 (max. 8388607)
- 29 named destinations out of 1000 (max. 131072)
+ 368 PDF objects out of 1000 (max. 8388607)
+ 31 named destinations out of 1000 (max. 131072)
  144 words of extra memory for PDF output out of 10000 (max. 10000000)
 

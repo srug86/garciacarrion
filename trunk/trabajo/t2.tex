@@ -257,19 +257,62 @@ cadena.
 
 Como se dijo anteriormente, este sistema controla, mediante un encoder, las 
 botellas defectuosas para retirarlas de la cadena. Las botellas son 
-"literalmente" empujadas fuera de la cadena, en su fase de transporte, mediante 
-un expulsador (o pusher). Este sistema empuja a la botella fuera de la cinta 
-transportadora. El encoder cuenta los pulsos que deben pasar desde que un  
-inspector encuentra una botella defectuosa, hasta que realmente esta botella 
-pasa delante de uno de estos pusher; es entonces cuando se da la orden de que 
-este actúe.
+"literalmente'' empujadas fuera de la cadena, en su fase de transporte, 
+mediante un expulsador (o pusher). Este sistema empuja a la botella fuera de 
+la cinta transportadora. El encoder cuenta los pulsos que deben pasar desde 
+que un inspector encuentra una botella defectuosa, hasta que realmente esta 
+botella pasa delante de uno de estos pusher; es entonces cuando se da la orden 
+de que este actúe.
 
-\subsection{Inspector del nivel del tapón}
 \section{Etiquetadora}
-\subsection{Inspector de etiquetas}
+
 \section{Agrupadora}
+
 \section{Paletizadora}
+
 \section{Enfardadora}
+El palé llega a la enfardadora a través de la misma cinta que lo saca de la 
+paletizadora. 
+
+La enfardadora tiene tres partes bien diferenciadas:
+\begin{description}
+\item \textbf{Mesa de rotación}
+La mesa de rotación es una sección de la propia cinta transportadora que tiene 
+la funcionalidad de girar en un plano paralelo al del suelo, pero sobre un eje 
+perpendicular a este. Esta característica se aprovecha para, dado un rollo de 
+plástico colocado cerca del palé, ir enrollando con el plástico el contenido 
+del palé con varias capas, de arriba a abajo y viceversa, según las 
+características del palé y de su contenido.
+\item \textbf{Pisón}
+Una vez colocado el palé encima de la mesa de rotación, se fija al suelo con 
+ayuda del pilón. El pilón es una columna anclada al suelo que posee, en su 
+parte superior, una plataforma móvil que desciende hasta aprisionar contra la
+mesa de rotación al palé. Dicha plataforma gira junto con el giro de la mesa de
+rotación. Además, el pisón tiene la funcionalidad de medir la altura del palé 
+para decírselo al robot. Esto lo hace ayudado por una resistencia lineal
+variable; el valor de la resistencia determinará la altura del palé.
+\item \textbf{Robot}
+La enfardadora posee además un robot. Este es el encargado de colocar el rollo 
+de plástico de tal forma que, el movimiento de la mesa de rotación, vaya 
+enrollando el plástico en el palé. El movimiento del brazo robótico posibilita 
+forrar el palé de arriba a abajo con un simple movimiento ascendente o 
+descendente del portador del rollo. Pero además, este modelo, también permite 
+cambiar de rollo de enfardado sin tener que parar la máquina. El robot posee 
+dos rollos de plástico; uno es el que se está utilizando para realizar el 
+enfardado y el otro es el de repuesto, cuando se acaba el rollo, el propio 
+robot desecha el rollo gastado y acude a su portarrollos a por un recambio para
+poder continuar su labor. El operario por su parte puede cambiar en ese momento
+el rollo vacío del portarrollos para cuando vuelva a gastarse el rollo actual.
+
+La enfardadora manera una serie de variables de actuación según la naturaleza
+del palé a enfardar. Así se podrá configurar la velocidad de rotación de la 
+mesa y la tensión ejercida por el robot a la hora de colocar el rollo de 
+plástico para el forrado del palé.
+
+Los palés forrados continúan por la cinta transportadora contigua hasta el 
+extremo de esta. Una vez allí, una de los numerosos vehículos con control 
+automatizado se encargará de recoger el palé y llevarlo al almacen.
+
 \chapter{Beneficios de la automatización}
 Introducir nuevas tecnologías en una empresa tradicional como JGC siempre
 resulta un proceso complicado y que no agrada a todo el mundo. Pero no se
