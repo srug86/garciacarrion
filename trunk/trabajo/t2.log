@@ -1,12 +1,8 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.2.10)  30 APR 2010 20:12
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2010.2.10)  30 APR 2010 22:19
 entering extended mode
  %&-line parsing enabled.
-**t2.tex
-(./t2.tex
-LaTeX2e <2005/12/01>
-Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/report.cls
+**\input t2.tex
+(./t2.tex (/usr/share/texmf-texlive/tex/latex/base/report.cls
 Document Class: report 2005/09/16 v1.4f Standard LaTeX document class
 (/usr/share/texmf-texlive/tex/latex/base/size11.clo
 File: size11.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
@@ -618,12 +614,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1})
 has been already used, duplicate ignored
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.136 
+l.135 
        <./img/proceso.pdf>] [8pdfTeX warning (ext4): destination with the same 
 identifier (name{figure.3.2}) has been already used, duplicate ignored
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.169 \chapter
+l.170 \chapter
               {Explicación de las islas de automatización} <./img/preforma-20
 .pdf>]
 Cap\'{\i }tulo 4.
@@ -634,7 +630,7 @@ Cap\'{\i }tulo 5.
 [17
 
 ] [18]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 532.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 536.
 
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2007/01/14 v1.3 Font defs for Latin Modern
@@ -642,13 +638,13 @@ File: t1lmtt.fd 2007/01/14 v1.3 Font defs for Latin Modern
 
 ] (./t2.aux) ) 
 Here is how much of TeX's memory you used:
- 4819 strings out of 95086
- 63356 string characters out of 1183255
+ 4819 strings out of 95087
+ 63356 string characters out of 1183278
  124520 words of memory out of 1500000
  7799 multiletter control sequences out of 10000+50000
  72748 words of font info for 56 fonts, out of 1200000 for 2000
  42 hyphenation exceptions out of 8191
- 39i,12n,43p,264b,458s stack positions out of 5000i,500n,6000p,200000b,5000s
+ 39i,12n,43p,271b,462s stack positions out of 5000i,500n,6000p,200000b,5000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/
 fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts
@@ -657,7 +653,7 @@ usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/
 texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on t2.pdf (19 pages, 893368 bytes).
+Output written on t2.pdf (19 pages, 900200 bytes).
 PDF statistics:
  399 PDF objects out of 1000 (max. 8388607)
  40 named destinations out of 1000 (max. 131072)
