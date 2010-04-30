@@ -1,8 +1,12 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2010.3.29)  30 APR 2010 18:52
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.2.10)  30 APR 2010 20:12
 entering extended mode
  %&-line parsing enabled.
-**\input t2.tex
-(./t2.tex (/usr/share/texmf-texlive/tex/latex/base/report.cls
+**t2.tex
+(./t2.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/report.cls
 Document Class: report 2005/09/16 v1.4f Standard LaTeX document class
 (/usr/share/texmf-texlive/tex/latex/base/size11.clo
 File: size11.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
@@ -376,10 +380,23 @@ Now handling font encoding PD1 ...
 (/etc/texmf/tex/latex/config/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2006/08/22 v2.4 Connects package keyval with LaTeX options (
-HO)
+(/home/sergio/texmf/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+(/home/sergio/texmf/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+
+(/home/sergio/texmf/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
 )
+(/home/sergio/texmf/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
 Package hyperref Info: Option `colorlinks' set `true' on input line 2238.
 Package hyperref Info: Hyper figures OFF on input line 2288.
 Package hyperref Info: Link nesting OFF on input line 2293.
@@ -475,27 +492,39 @@ LaTeX Font Info:    Try loading font information for T1+lmr on input line 13.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2007/01/14 v1.3 Font defs for Latin Modern
 )
+(/usr/share/texmf/tex/context/base/supp-pdf.tex
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count101
+\scratchdimen=\dimen113
+\scratchbox=\box31
+\nofMPsegments=\count102
+\nofMParguments=\count103
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count104
+\MPscratchDim=\dimen114
+\MPnumerator=\count105
+\everyMPtoPDFconversion=\toks29
+)
 Package hyperref Info: Link coloring ON on input line 13.
-
-(/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+ (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
 
-(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
-Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
+(/home/sergio/texmf/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count101
+\c@section@level=\count106
 )
 LaTeX Info: Redefining \ref on input line 13.
 LaTeX Info: Redefining \pageref on input line 13.
- (./t2.out)
-(./t2.out)
+ (./t2.out) (./t2.out)
 \@outlinefile=\write4
 \openout4 = `t2.out'.
 
- (./inc/hyphenations.tex)
-<img/logoesi.pdf, id=55, 598.235pt x 845.1575pt>
+
+(./inc/hyphenations.tex) <img/logoesi.pdf, id=55, 598.235pt x 845.1575pt>
 File: img/logoesi.pdf Graphic file (type pdf)
- <use img/logoesi.pdf>
+
+<use img/logoesi.pdf>
 Overfull \hbox (55.33858pt too wide) in paragraph at lines 21--21
 [][] 
  []
@@ -600,26 +629,26 @@ l.169 \chapter
 Cap\'{\i }tulo 4.
 [9
 
-] [10] [11] [12] [13] [14]
+] [10] [11] [12] [13] [14] [15] [16]
 Cap\'{\i }tulo 5.
-[15
+[17
 
-] [16]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 458.
+] [18]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 532.
 
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2007/01/14 v1.3 Font defs for Latin Modern
-) [17
+) [19
 
 ] (./t2.aux) ) 
 Here is how much of TeX's memory you used:
- 4419 strings out of 95087
- 57776 string characters out of 1183278
- 118731 words of memory out of 1500000
- 7414 multiletter control sequences out of 10000+50000
+ 4819 strings out of 95086
+ 63356 string characters out of 1183255
+ 124520 words of memory out of 1500000
+ 7799 multiletter control sequences out of 10000+50000
  72748 words of font info for 56 fonts, out of 1200000 for 2000
  42 hyphenation exceptions out of 8191
- 38i,11n,43p,256b,453s stack positions out of 5000i,500n,6000p,200000b,5000s
+ 39i,12n,43p,264b,458s stack positions out of 5000i,500n,6000p,200000b,5000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/
 fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts
@@ -628,9 +657,9 @@ usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/
 texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on t2.pdf (17 pages, 886682 bytes).
+Output written on t2.pdf (19 pages, 893368 bytes).
 PDF statistics:
- 390 PDF objects out of 1000 (max. 8388607)
- 38 named destinations out of 1000 (max. 131072)
+ 399 PDF objects out of 1000 (max. 8388607)
+ 40 named destinations out of 1000 (max. 131072)
  128 words of extra memory for PDF output out of 10000 (max. 10000000)
 
