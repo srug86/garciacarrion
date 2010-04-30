@@ -1,8 +1,12 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2010.2.10)  29 APR 2010 00:02
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.2.10)  30 APR 2010 14:27
 entering extended mode
  %&-line parsing enabled.
-**\input t2.tex
-(./t2.tex (/usr/share/texmf-texlive/tex/latex/base/report.cls
+**t2.tex
+(./t2.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/report.cls
 Document Class: report 2005/09/16 v1.4f Standard LaTeX document class
 (/usr/share/texmf-texlive/tex/latex/base/size11.clo
 File: size11.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
@@ -488,15 +492,27 @@ LaTeX Font Info:    Try loading font information for T1+lmr on input line 13.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2007/01/14 v1.3 Font defs for Latin Modern
 )
+(/usr/share/texmf/tex/context/base/supp-pdf.tex
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count101
+\scratchdimen=\dimen113
+\scratchbox=\box31
+\nofMPsegments=\count102
+\nofMParguments=\count103
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count104
+\MPscratchDim=\dimen114
+\MPnumerator=\count105
+\everyMPtoPDFconversion=\toks29
+)
 Package hyperref Info: Link coloring ON on input line 13.
-
-(/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+ (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
 
 (/home/sergio/texmf/tex/latex/oberdiek/refcount.sty
 Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count101
+\c@section@level=\count106
 )
 LaTeX Info: Redefining \ref on input line 13.
 LaTeX Info: Redefining \pageref on input line 13.
@@ -505,7 +521,7 @@ LaTeX Info: Redefining \pageref on input line 13.
 \openout4 = `t2.out'.
 
 
-(./inc/hyphenations.tex) <img/logoesi.pdf, id=63, 598.235pt x 845.1575pt>
+(./inc/hyphenations.tex) <img/logoesi.pdf, id=55, 598.235pt x 845.1575pt>
 File: img/logoesi.pdf Graphic file (type pdf)
 
 <use img/logoesi.pdf>
@@ -590,10 +606,10 @@ Cap\'{\i }tulo 2.
 
 ]
 Cap\'{\i }tulo 3.
-<img/proceso.pdf, id=282, 862.6719pt x 295.9878pt>
+<img/proceso.pdf, id=272, 862.6719pt x 295.9878pt>
 File: img/proceso.pdf Graphic file (type pdf)
  <use img/proceso.pdf>
-<img/preforma-20.pdf, id=284, 250.9375pt x 250.9375pt>
+<img/preforma-20.pdf, id=274, 250.9375pt x 250.9375pt>
 File: img/preforma-20.pdf Graphic file (type pdf)
 
 <use img/preforma-20.pdf> [7
@@ -613,32 +629,36 @@ l.169 \chapter
 Cap\'{\i }tulo 4.
 [9
 
-] [10] [11]
+] [10] [11] [12] [13]
 Cap\'{\i }tulo 5.
-[12
+[14
 
-]
-No file t2.bbl.
-[13] (./t2.aux) ) 
+] (./t2.bbl [15]
+
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
+
+) [16
+
+] (./t2.aux) ) 
 Here is how much of TeX's memory you used:
- 4467 strings out of 95087
- 58738 string characters out of 1183278
- 119576 words of memory out of 1500000
- 7462 multiletter control sequences out of 10000+50000
- 75457 words of font info for 56 fonts, out of 1200000 for 2000
+ 4771 strings out of 95086
+ 62689 string characters out of 1183255
+ 124424 words of memory out of 1500000
+ 7759 multiletter control sequences out of 10000+50000
+ 72414 words of font info for 55 fonts, out of 1200000 for 2000
  42 hyphenation exceptions out of 8191
- 39i,11n,43p,271b,451s stack positions out of 5000i,500n,6000p,200000b,5000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/tex
-mf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmb
-x10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fo
-nts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type
-1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmsy10.pfb>
-Output written on t2.pdf (13 pages, 856608 bytes).
+ 39i,11n,43p,264b,463s stack positions out of 5000i,500n,6000p,200000b,5000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/
+fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts
+/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmsy10.pfb>
+Output written on t2.pdf (16 pages, 861091 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 31 named destinations out of 1000 (max. 131072)
- 144 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 371 PDF objects out of 1000 (max. 8388607)
+ 33 named destinations out of 1000 (max. 131072)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 
