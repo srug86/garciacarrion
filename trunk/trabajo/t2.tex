@@ -41,7 +41,7 @@ componentes de nuestro grupo trabaja en dicha planta.
 
 JGC es la empresa fabricante de todos los productos \textbf{Don Simón}.
 
-JGC para desarrollar su plan estratégico cuenta con distintas bodegas y 
+Para desarrollar su plan estratégico cuenta con distintas bodegas y 
 plantas de proceso y envasado de última tecnología en distintas partes de la
 geografía española, siendo una empresa pionera tanto a nivel nacional como
 internacional:
@@ -127,8 +127,8 @@ embotellar, consigamos un palé lleno de botellas.
 
 \begin{itemize}
 \item La primera etapa consiste en a partir de las preformas obtener botellas 
-de plástico. Una preforma es como se puede apreciar en la \emph{imagen  
-\ref{preforma}} una pequeña probeta de plástico. Esta preforma es
+de plástico. Una preforma es, como se puede apreciar en la \emph{imagen  
+\ref{preforma}}, una pequeña probeta de plástico. Esta preforma es
 introducida en una máquina llamada \textbf{Sopladora}. A la salida de esta 
 etapa las preformas son convertidas en botellas de plástico vacías.
 \imagen{preforma-20.pdf}{4.5}{Preforma}{preforma}
@@ -148,9 +148,9 @@ confirmar que las etiquetas fueron colocadas de forma correcta. Posteriormente
 se profundizará más sobre ello.
 
 \item Seguidamente, las botellas son conducidas hacia la \textbf{Agrupadora}
-  que, como su nombre indica, que encarga de agrupar packs de cuatro botellas,
-forrándolas en plástico, de forma que su futura manipulación sea por 
-conjuntos, no de forma individual.
+  que, como su nombre indica, que encarga de agrupar packs de cuatro 
+bo\-te\-llas, forrándolas en plástico, de forma que su futura manipulación sea
+por conjuntos, no de forma individual.
 
 \item Después, los packs de botellas pasan a otra máquina llamada
   \textbf{Paletizadora}, que se encarga de formar capas de packs para,
@@ -171,31 +171,32 @@ hablará más a fondo en el capítulo siguiente.
 \section{Sopladora}
 La primera de nuestras islas de automatización es la \textbf{sopladora}.
 
-Esta planta dispone de una sopladora \emph{KRONES Volumetic}, con una capacidad
-de trabajo de más de 14.000 botellas a la hora.
+Esta planta dispone de una sopladora \emph{KRONES Volumetic}, con una 
+capacidad de trabajo de más de 14.000 botellas a la hora.
 
 Las preformas se encuentran dispuestas en una fila a la entrada de un horno. 
 Cada preforma entra al túnel y se calienta por radiación. Según el tipo de 
 resina de con la que está hecha y la geometría que se quiere conseguir, se 
 aplica una temperatura específica (unos 110ºC de media). Para controlar la 
-temperatura que se aplica a cada preforma, el horno cuenta con un pirómetro.
-Con la ayuda de un controlador PID (Proporcional Integral Derivativo), la 
-temperatura que se aplica a la preforma se mantiene en todo momento constante, 
-ya que de no ser así, puede provocarle deformaciones.
+temperatura que se aplica a cada preforma, el horno cuenta con un 
+\textbf{pirómetro}. Con la ayuda de un controlador \textbf{PID} (Proporcional
+Integral Derivativo), la temperatura que se aplica a la preforma se mantiene
+en todo momento constante, ya que de no ser así, podría provocarle
+deformaciones.
 
-Una vez caliente, la preforma es conducida a un molde. El molde está compuesto 
+Una vez caliente, la preforma es conducida a un molde. El molde está compuesto
 por tres piezas que se separan para permitir la entrada de la preforma. 
 Una vez dentro, las piezas se unen y desciende la sopladora sobre la boquilla 
 de la preforma. La sopladora realiza dos operaciones sobre la preforma:
 \begin{itemize}
-\item Primero, se realiza el estirado y presoplado. Este consiste en que una 
-varilla se introduce en la preforma y la va estirando mientras la sopla hasta 
-que le da la longitud final que tendrá la botella.
-\item Después, se realiza el soplado moldeante. Este hace que la preforma se
-hinche hasta tocar las paredes del molde. Por el interior del molde circula 
-una corriente de agua (a una temperatura aproximada de 9ºC) que mantiene frías 
-las paredes. Cuando el material caliente de la preforma toca la pared fría del 
-molde, adquiere la forma de este y se enfría.
+\item Primero, se realiza el \textbf{estirado y presoplado}. Este consiste en
+que una varilla se introduce en la preforma y la va estirando mientras la 
+sopla hasta que le da la longitud final que tendrá la botella.
+\item Después, se realiza el \textbf{soplado moldeante}. Este hace que la 
+preforma se hinche hasta tocar las paredes del molde. Por el interior del
+molde circula una corriente de agua (a una temperatura aproximada de 9ºC) que
+mantiene frías las paredes. Cuando el material caliente de la preforma toca la
+pared fría del molde, adquiere la forma de este y se enfría.
 \end{itemize}
 Para controlar los procesos de estirado y soplado, el sistema cuenta también 
 con un controlador PID, que maneja el traductor de presión y la válvula 
@@ -206,42 +207,44 @@ sobre una superficie giratoria que, mientras gira, va cogiendo las preformas
 que se le van sirviendo para meterlas en cada uno de los moldes. Una vez 
 formada cada botella, aprovechando el giro del sistema, se vuelve a abrir el 
 molde y va saliendo del sistema por el lado opuesto al que entró, hacia la 
-siguiente isla de automatización, la llenadora.
+siguiente isla de automatización, la \textbf{llenadora}.
 
 \section{Llenadora/Taponadora}
 Las botellas son transportadas por un carrusel hasta la llenadora.
 
-La llenadora/taponadora de esta planta, es una KRONES Contiform, con una 
-capacidad de trabajo de 12.000 a 14.000 botellas a la hora, dependiendo de la 
-capacidad de las botellas que deben llenar.
+La \textbf{llenadora/taponadora} de esta planta, es una KRONES Contiform, con 
+una capacidad de trabajo de 12.000 a 14.000 botellas a la hora, dependiendo de
+la capacidad de las botellas que deben llenar.
 
 Al llegar a este sistema, cada botella es enchufada por un caño. Esta máquina 
 posee un total de 80 caños conectados a un depósito donde está alojado el 
 líquido con el que vamos a llenar las botellas, en este caso tinto de verano.
 
-Primero, cada caño hace una presurización de la botella, con el objetivo de 
-equilibrar la presión existente entre la botella y el caño para que pueda caer 
-el líquido en la botella y que no forme espuma.
+Primero, cada caño hace una \emph{presurización} de la botella, con el 
+objetivo de equilibrar la presión existente entre la botella y el caño para 
+que pueda caer el líquido en la botella y que no forme espuma.
 
 Para conocer el volumen que contiene la botella en un instante dado, cada caño 
-posee un caudalímetro. Como el llenado de la botella se produce mientras se 
-transporta a la siguiente máquina del sistema, se debe configurar correctamente
-la velocidad del carrusel para que le de tiempo a llenar la botella.
+posee un \textbf{caudalímetro}. Como el llenado de la botella se produce
+mientras se transporta a la siguiente máquina del sistema, se debe configurar
+correctamente la velocidad del carrusel para que le de tiempo a llenar la 
+botella.
 
-Este sistema, al igual que casi todos los sistemas de la planta, utiliza varias
-fotocélulas de ultrasonidos para detectar el paso de las botellas, y 
-codificadores rotatorios (o encoders) para calcular, mediante el conteo de 
-pulsos, cuando deben actuar los actuadores. En este caso, detecta el paso de 
-una botella y calcula el momento en que esta llegará al caño, para dar la orden
-de abrir a la válvula de llenado de dicho caño.
+Este sistema, al igual que casi todos los sistemas de la planta, utiliza 
+varias \textbf{fotocélulas de ultrasonidos} para detectar el paso de las 
+botellas, y \textbf{codificadores rotatorios} (o \emph{\emph{encoder}s}) para 
+calcular, mediante el conteo de pulsos, cuando deben actuar los actuadores. 
+En este caso, detecta el paso de una botella y calcula el momento en que esta 
+llegará al caño, para dar la orden de abrir a la válvula de llenado de dicho 
+caño.
 
-Cuando la botella sale del carrusel de llenado entra en la taponadora. La 
-taponadora detecta la entrada de una botella, abre una trampilla, deja caer el 
-tapón y mediante un embrague, que realiza un par determinado, lo aprieta, 
+Cuando la botella sale del carrusel de llenado entra en la \textbf{taponadora}.
+La taponadora detecta la entrada de una botella, abre una trampilla, deja caer 
+el tapón y mediante un embrague, que realiza un par determinado, lo aprieta, 
 tapando la botella.
 
 A fin de controlar las botellas defectuosas, este sistema cuenta con dos 
-inspectores:
+\textbf{inspectores}:
 \begin{description}
 \item \textbf{Inspector de nivel}
 Este primer inspector se encarga de controlar que la botella ha sido llenada 
@@ -251,42 +254,41 @@ rayos X y proporciona una salida entre 0 y 10V.
 
 \item \textbf{Inspector de tapón}
 Este inspector se encarga de controlar que la botella esté tapada 
-correctamente. Para ello, se cuenta con dos fotocélulas. Estas fotocélulas se 
-encuentran a la altura a la que debería ir la anilla del tapón. La anilla del 
-tapón hace más grueso el cuello de la botella. Las fotocélulas se sitúan a una 
-distancia algo menor al diámetro del cuello de la botella, de tal forma que si
-ambas fotocélulas detectan a la botella a la vez es que lleva bien colocado el 
-tapón. En cualquier otro caso se controlará la botella para ser retirada  de 
-la cadena.
+correctamente. Para ello, se cuenta con dos \textbf{fotocélulas}. Estas 
+fotocélulas se encuentran a la altura a la que debería ir la anilla del tapón.
+La anilla del tapón hace más grueso el cuello de la botella. Las fotocélulas 
+se sitúan a una distancia algo menor al diámetro del cuello de la botella, de
+tal forma que si ambas fotocélulas detectan a la vez a la botella es que lleva
+bien colocado el tapón. En cualquier otro caso, se controlará la botella para
+ser retirada de la cadena.
 \end{description}
 
-Como se dijo anteriormente, este sistema controla, mediante un encoder, las 
-botellas defectuosas para retirarlas de la cadena. Las botellas son 
+Como se dijo anteriormente, este sistema controla mediante un \emph{encoder} 
+las botellas defectuosas para retirarlas de la cadena. Las botellas son 
 "literalmente'' empujadas fuera de la cadena, en su fase de transporte, 
-mediante un expulsador (o pusher). Este sistema empuja a la botella fuera de 
-la cinta transportadora. El encoder cuenta los pulsos que deben pasar desde 
-que un inspector encuentra una botella defectuosa, hasta que realmente esta 
-botella pasa delante de uno de estos pusher; es entonces cuando se da la orden 
-de que este actúe.
+mediante un \textbf{expulsador} (o \emph{pusher}). Este sistema empuja a la
+botella fuera de la cinta transportadora. El \emph{encoder} cuenta los pulsos
+que deben pasar desde que un inspector encuentra una botella defectuosa, hasta
+que realmente esta botella pasa delante de uno de estos \emph{pusher}; es 
+entonces cuando se da la orden de que este actúe.
 
 \section{Etiquetadora}
 Antes de llegar a la siguiente isla de automatización, encontramos una 
 \textbf{mesa de acumulación}. Esto se debe a que, a partir de este nivel, cada
 una de las máquinas que encontraremos es un 10\% más rápida que la anterior.
-Por este motivo, para que la etiquetadora, nuestro siguiente subsistema a 
-analizar, pueda trabajar con continuidad, es decir, sin que le falten los 
-recursos que necesita para trabajar, necesitará contar con un número 
+Por este motivo, para que la \textbf{etiquetadora}, nuestro siguiente 
+subsistema a analizar, pueda trabajar con continuidad, es decir, sin que le 
+falten los recursos que necesita para trabajar, necesita contar con un número 
 considerable de botellas en stock. Cuando se alcanza este nivel, se activan 
-las cintas transportadoras que conducen a las botellas a la etiquetadora.
-Para controlar el número de botellas almacenadas, la mesa de acumulación 
-cuenta con un sensor que mide la presión que ejercen las botellas contra las
-paredes de la mesa. Cuando se alcanza la presión programada, la cinta 
-transportadora comienza a moverse. Por otro lado, cuando esta presión es nula,
-el movimiento de la cinta cesará y de forma automática, también se parará
-la etiquetadora.
+las \textbf{cintas transportadoras} que conducen a las botellas a la 
+etiquetadora. Para controlar el número de botellas almacenadas, la mesa de 
+acumulación cuenta con un sensor que mide la presión que ejercen las botellas 
+contra sus paredes. Cuando se alcanza la presión programada, la cinta comienza 
+a moverse. Por otro lado, cuando esta presión es nula, el movimiento de la 
+cinta cesa y de forma automática, también se para la etiquetadora.
 
 Llegados a este punto, encontramos a un gran número de botellas agrupadas 
-desplazándose hacia la etiquetadora, aunque, esta solo puede recibir las 
+desplazándose hacia la etiquetadora, aunque, esta sólo pueda recibir las 
 botellas enfiladas. Es por ello que necesitamos un mecanismo intermedio que 
 las alinee. Para ello se cuenta con un \textbf{alineador}. Este sistema cuenta
 con una serie de estrechas cintas transportadoras, colocadas unas al lado de
@@ -298,31 +300,31 @@ estrechamiento. En ese momento, las botellas que van primeras, son empujadas
 a una cinta más estrecha y más rápida. Las botellas que han sido empujadas a
 esta cinta, se encontrarán de nuevo con otro estrechamiento, cayendo de nuevo
 a otra cinta más rápida que la anterior. El resultado será que, cuando se 
-llega a la última cinta, todas las botellas que se encuentran en cabeza, están
-alineadas.
+llega a la última cinta, todas las botellas que se encuentran en cabeza, 
+estarán alineadas.
 
 Por fin, las botellas llegán a la \textbf{etiquetadora}. Esta etiquetadora es 
-una KRONES Contiroll, y tiene una capacidad de trabajo de más de 14.000 
+una \emph{KRONES Contiroll}, y tiene una capacidad de trabajo de más de 14.000 
 botellas a la hora.
 
-Un tornillo sin fin va separando las botellas entrantes, para evitar que lo 
+Un tornillo sin fin va separando las botellas entrantes para evitar que lo 
 hagan todas seguidas. La botella se encuentra con un primer cilindro 
 giratorio, llamado \emph{de estrella}. Este recoge la botella del tornillo sin
 fin y se la sirve, al otro lado, a otro cilindro giratorio en estella mucho 
 mayor. Este cilindro recoge la botella en una de sus muecas y la hace también 
 girar sobre sí misma. Durante su camino por el cilindro, la botella se 
 encuentra en primer lugar con el sistema de etiquetado. Este, está formado por
-una serie de rodillos que seguidamente comentaremos: 
+una serie de rodillos: 
 \begin{itemize}
- \item tenemos dos rodillos que contienen dos bobinas de etiquetas, una que va
-suministrando las etiquetas y la otra que está para cuando se termine el 
+ \item Dos rodillos que contienen dos bobinas de etiquetas, una que va
+suministrando las etiquetas y otra que está para cuando se termine el 
 primer rollo. La conmutación para cambiar entre uno y otro rollo se realiza 
 automáticamente, de forma que no hace falta parar la máquina para cambiar de 
 rollo.
 \item El siguiente rodillo, es el de la cortadora. Antes de llevar a dicho
 rodillo, tenemos una fotocélula de contraste, que detecta el borde donde se 
-debe cortar la etiqueta. Esta fotocélula, coordinada con un encoder, avisa de
-cuándo debe actuar la cortadora del rodillo sobre la etiqueta.
+debe cortar la etiqueta. Esta fotocélula, coordinada con un \emph{encoder}, 
+avisa de cuándo debe actuar la cortadora del rodillo sobre la etiqueta.
 \item La etiqueta llega al rodillo de encolado. Este rodillo, que gira en 
 sentido opuesto al anterior, recoge la etiqueta y la deja montada sobre dos
 escalones, que coinciden con el inicio y el final de la etiqueta. Esto se 
@@ -338,13 +340,13 @@ Siguiendo con el recorrido de la botella, antes de dejar el cilindro
 principal, pasa por un \textbf{inspector de etiquetas}, consistente en un
 fotógrafo que compara fotos por contraste. Con ello averigua si la etiqueta
 se ha colocado correctamente sobre la botella. En caso contrario, al igual
-que ocurría con la llenadora/taponadora contamos con otro \textbf{pusher}
-que, ayudado de un encoder, expulsará las botellas que no cumplan los
+que ocurría con la llenadora/taponadora contamos con otro \emph{pusher}
+que, ayudado de un \emph{encoder}, expulsará las botellas que no cumplan los
 requisitos de contraste especificados.
 
 Finalmente, la botella se encuentra con otro cilindro en estrella, que la
 recoge y la deja en una cinta transportadora, donde se encuentra el 
-\emph{pusher} mencionado anteriormente.
+\emph{\emph{pusher}} mencionado anteriormente.
 
 \section{Agrupadora}
 A la salida de la etiquetadora encontramos otra mesa de acumulación, puesto 
@@ -413,16 +415,17 @@ la de coger capas de packs y colocarlos sobre los palés directamente, o sobre
 los cartones que tapan una capa anteriormente colocada.
 \end{itemize}
 
-Los palés completados son recogidos por vehículos guiados automáticamente, o
-AGVs, para ser transportados hacia nuestra siguiente y última isla de 
-automatización, la enfardadora.
+Los palés completados son recogidos por \textbf{vehículos guiados 
+automáticamente}, o \emph{AGVs}, para ser transportados hacia nuestra siguiente
+y última isla de automatización, la \textbf{enfardadora}.
 
 \section{Enfardadora}
 La tarea de la \textbf{enfardadora} consiste en forrar de plástico los 
 laterales de los palés que le van llegando. Con ello se consigue la 
 consistencia y robustez del palé, clave a la hora del proceso de transporte.
 
-Al igual que la anterior, este sistema tampoco es KRONES, sino ELETTRIC80.
+Al igual que la anterior, este sistema tampoco es \emph{KRONES}, sino 
+\emph{ELETTRIC80}.
 
 La enfardadora tiene tres partes bien diferenciadas:
 \begin{description}
