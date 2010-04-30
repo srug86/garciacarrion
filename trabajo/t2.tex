@@ -170,16 +170,16 @@ siguiente.
 \section{Sopladora}
 La primera de nuestras islas de automatización es la sopladora.
 
-Esta planta dispone de una sopladora KRONES Contiform, con una capacidad de 
-trabajo de 14.000 botellas a la hora.
+Esta planta dispone de una sopladora KRONES Volumetic, con una capacidad de 
+trabajo de más de 14.000 botellas a la hora.
 
 Las preformas se encuentran dispuestas en una fila a la entrada de un horno. 
 Cada preforma entra al túnel y se calienta por radiación. Según el tipo de 
-resina de con la que está hecha la preforma y la geometría que se quiere 
-conseguir, se aplica una temperatura específica (unos 110ºC de media). Para 
-controlar la temperatura que se aplica a cada preforma, el horno cuenta con un
-pirómetro. Con la ayuda de un PID la temperatura que se aplica a la preforma 
-se mantiene en todo momento constante, ya que de no ser así puede provocarle
+resina de con la que está hecha y la geometría que se quiere conseguir, se 
+aplica una temperatura específica (unos 110ºC de media). Para controlar la 
+temperatura que se aplica a cada preforma, el horno cuenta con un pirómetro.
+Con la ayuda de un PID, la temperatura que se aplica a la preforma, se 
+mantiene en todo momento constante, ya que de no ser así puede provocarle
 deformaciones.
 
 Una vez caliente, la preforma es conducida a un molde. El molde está compuesto 
@@ -187,10 +187,10 @@ por dos o tres piezas que se separan para permitir la entrada de la preforma.
 Una vez dentro, las piezas se unen y desciende la sopladora sobre la boquilla 
 de la preforma. La sopladora realiza dos operaciones sobre la preforma:
 \begin{itemize}
-\item Primero se realiza el estirado y presoplado. Este consiste en que una 
+\item Primero, se realiza el estirado y presoplado. Este consiste en que una 
 varilla se introduce en la preforma y la va estirando mientras la sopla hasta 
 que le da la longitud final que tendrá la botella.
-\item Después se realiza el soplado moldeante. Este hace que la preforma se
+\item Después, se realiza el soplado moldeante. Este hace que la preforma se
 hinche hasta tocar las paredes del molde. Por el interior del molde circula 
 una corriente de agua (a una temperatura aproximada de 9ºC) que mantiene frías 
 las paredes. Cuando el material caliente de la preforma toca la pared fría del 
@@ -200,13 +200,17 @@ Para controlar los procesos de estirado y soplado, el sistema cuenta también
 con un controlador PID, que maneja el traductor de presión y la válvula 
 modulante de presión.
 
-Una vez formada la botella, se vuelve a abrir el molde y sale del sistema hacia 
-la siguiente isla de automatización, la llenadora.
+En total, la sopladora consta de 8 moldes. Estos se encuentran dispuestos 
+sobre una superficie giratoria que, mientras gira, va cogiendo las preformas 
+que se le van sirviendo para meterlas en cada uno de los moldes. Una vez 
+formada cada botella, aprovechando el giro del sistema, se vuelve a abrir el 
+molde y va saliendo del sistema por el lado opuesto al que entró, hacia la 
+siguiente isla de automatización, la llenadora.
 
 \section{Llenadora/Taponadora}
 Las botellas son transportadas por un carrusel hasta la llenadora.
 
-La llenadora/taponadora de esta planta es una KRONES Contiform, con una 
+La llenadora/taponadora de esta planta, es una KRONES Contiform, con una 
 capacidad de trabajo de 12.000 a 14.000 botellas a la hora, dependiendo de la 
 capacidad de las botellas que deben llenar.
 
@@ -251,8 +255,8 @@ encuentran a la altura a la que debería ir la anilla del tapón. La anilla del
 tapón hace más grueso el cuello de la botella. Las fotocélulas se sitúan a una 
 distancia algo menor al diámetro del cuello de la botella, de tal forma que si
 ambas fotocélulas detectan a la botella a la vez es que lleva bien colocado el 
-tapón. En cualquier otro caso se controlará la botella para ser retirada  de la
-cadena.
+tapón. En cualquier otro caso se controlará la botella para ser retirada  de 
+la cadena.
 \end{description}
 
 Como se dijo anteriormente, este sistema controla, mediante un encoder, las 
@@ -265,6 +269,50 @@ botella pasa delante de uno de estos pusher; es entonces cuando se da la orden
 de que este actúe.
 
 \section{Etiquetadora}
+Antes de llegar a la siguiente isla de automatización, encontramos una 
+\textbf{mesa de acumulación}. Esto se debe a que, a partir de este nivel, cada
+una de las máquinas que encontraremos es un 10\% más rápida que la anterior.
+Por este motivo, para que la etiquetadora, nuestro siguiente subsistema a 
+analizar, pueda trabajar con continuidad, es decir, sin que le falten los 
+recursos que necesita para trabajar, necesitará contar con un número 
+considerable de botellas en stock. Cuando se alcanza este nivel, se activan 
+las cintas transportadoras que conducen a las botellas a la etiquetadora.
+Para controlar el número de botellas almacenadas, la mesa de acumulación 
+cuenta con un sensor que mide la presión que ejercen las botellas contra las
+paredes de la mesa. Cuando se alcanza la presión programada, la cinta 
+transportadora comienza a moverse. Por otro lado, cuando esta presión es nula,
+el movimiento de la cinta cesará y de forma automática, también se parará
+la etiquetadora.
+
+Llegados a este punto, encontramos a un gran número de botellas agrupadas 
+desplazándose hacia la etiquetadora, aunque, esta solo puede recibir las 
+botellas enfiladas. Es por ello que necesitamos un mecanismo intermedio que 
+las alinee. Para ello se cuenta con un \textbf{alineador}. Este sistema cuenta
+con una serie de estrechas cintas transportadoras, colocadas unas al lado de
+las otras, de forma paralela. Y cada cinta se desplaza a una velocidad 
+superior que la que se encuentra inmediatamente a su izquierda. Pues bien, el
+sistema funciona de la siguiente manera: las botellas llegan apiñadas por la 
+cinta más ancha y más lenta hasta que se encuentra en su camino con un 
+estrechamiento. En ese momento, las botellas que van primeras, son empujadas
+a una cinta más estrecha y más rápida. Las botellas que han sido empujadas a
+esta cinta, se encontrarán de nuevo con otro estrechamiento, cayendo de nuevo
+a otra cinta más rápida que la anterior. El resultado será que, cuando se 
+llega a la última cinta, todas las botellas que se encuentran en cabeza, están
+alineadas.
+
+Por fin, las botellas llegán a la \textbf{etiquetadora}. Esta etiquetadora es 
+una KRONES Contiroll, y tiene una capacidad de trabajo de más de 14.000 
+botellas a la hora.
+
+Un tornillo sin fin va separando las botellas entrantes, para evitar que lo 
+hagan todas seguidas. La botella se encuentra con un primer cilindro 
+giratorio, llamado \emph{de estrella}. Este recoge la botella del tornillo sin
+fin y se la sirve, al otro lado, a otro cilindro giratorio en estella mucho 
+mayor. Este cilindro recoge la botella en una de sus muecas y la hace también 
+girar sobre sí misma. Durante su camino por el cilindro, la botella se 
+encuentra primero con el sistema de etiquetado. Este, está formado por una 
+serie de rodillos que seguidamente comentaremos: tenemos dos rodillos que 
+contienen dos bobinas de etiquetas
 
 \section{Agrupadora}
 
@@ -303,6 +351,7 @@ enfardado y el otro es el de repuesto, cuando se acaba el rollo, el propio
 robot desecha el rollo gastado y acude a su portarrollos a por un recambio para
 poder continuar su labor. El operario por su parte puede cambiar en ese momento
 el rollo vacío del portarrollos para cuando vuelva a gastarse el rollo actual.
+\end{description}
 
 La enfardadora manera una serie de variables de actuación según la naturaleza
 del palé a enfardar. Así se podrá configurar la velocidad de rotación de la 
