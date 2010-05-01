@@ -32,15 +32,14 @@
 
 \chapter{Introducción}
 %soltar el rollo de xq la hemos elegido, en que consiste.
-A la hora de elegir una empresa sobre la que realizar el trabajo, se buscaron
-opciones cercanas geográficamente y de fácil acceso en nuestro entorno. Por
+A la hora de elegir una empresa sobre la que realizar el trabajo, se buscaronopciones cercanas geográficamente y de fácil acceso en nuestro entorno. Por
 este motivo la opción elegida fue la de la empresa \textbf{J.Garcia Ca\-rrión}
 (a partir de ahora \textbf{JGC}), ubicada en \textbf{Daimiel}; por tratarse de
 una instalación próxima a Ciudad Real y porque el hermano de uno de los 
 componentes de nuestro grupo trabaja en dicha planta.
 
 JGC es la empresa fabricante de todos los productos \textbf{Don Simón}.
-
+\imagen{don_simon.jpg}{4.5}{Don Simón}{D_S}
 Para desarrollar su plan estratégico cuenta con distintas bodegas y 
 plantas de proceso y envasado de última tecnología en distintas partes de la
 geografía española, siendo una empresa pionera tanto a nivel nacional como
@@ -99,6 +98,8 @@ por supuesto, a un precio razonable. La alternativa de aumentar el imperio JGC
 sobre la geografía española se planteaba como una alternativa cara de ejecutar,
 así que se optó por la construcción de una sola planta en la que invertir más 
 dinero para conseguir un alto rendimiento.
+
+\imagen{planta.jpg}{9}{Planta en la actualidad}{Planta}
 
 Pero durante la primera producción de dicha planta, un incendio la dejó hecha
 cenizas. Esta planta funcionaba con máquinas de la marca \emph{Sindel}, y se 
@@ -173,6 +174,7 @@ La primera de nuestras islas de automatización es la \textbf{sopladora}.
 
 Esta planta dispone de una sopladora \emph{KRONES Volumetic}, con una 
 capacidad de trabajo de más de 14.000 botellas a la hora.
+\imagen{sopla.jpg}{8}{Sopladora}{Sopla}
 
 Las preformas se encuentran dispuestas en una fila a la entrada de un horno. 
 Cada preforma entra al túnel y se calienta por radiación. Según el tipo de 
@@ -183,11 +185,12 @@ temperatura que se aplica a cada preforma, el horno cuenta con un
 Integral Derivativo), la temperatura que se aplica a la preforma se mantiene
 en todo momento constante, ya que de no ser así, podría provocarle
 deformaciones.
-
-Una vez caliente, la preforma es conducida a un molde. El molde está compuesto
-por tres piezas que se separan para permitir la entrada de la preforma. 
-Una vez dentro, las piezas se unen y desciende la sopladora sobre la boquilla 
-de la preforma. La sopladora realiza dos operaciones sobre la preforma:
+\imagen{molde2.jpg}{5}{Molde abierto}{mol}
+Una vez caliente, la preforma es conducida a un molde como el de la
+figura\ref{mol}. El molde está compuesto por tres piezas que se separan
+para permitir la entrada de la preforma. Una vez dentro, las piezas se unen y
+desciende la sopladora sobre la boquilla de la preforma. La sopladora realiza
+dos operaciones sobre la preforma: 
 \begin{itemize}
 \item Primero, se realiza el \textbf{estirado y presoplado}. Este consiste en
 que una varilla se introduce en la preforma y la va estirando mientras la 
@@ -202,7 +205,8 @@ Para controlar los procesos de estirado y soplado, el sistema cuenta también
 con un controlador PID, que maneja el traductor de presión y la válvula 
 modulante de presión.
 
-En total, la sopladora consta de 8 moldes. Estos se encuentran dispuestos 
+\imagen{molde.jpg}{9}{Moldes de la sopladora}{molde}
+En total, la sopladora consta de 8 moldes como se ve en la figura \ref{molde}. Estos se encuentran dispuestos 
 sobre una superficie giratoria que, mientras gira, va cogiendo las preformas 
 que se le van sirviendo para meterlas en cada uno de los moldes. Una vez 
 formada cada botella, aprovechando el giro del sistema, se vuelve a abrir el 
@@ -212,7 +216,7 @@ siguiente isla de automatización, la \textbf{llenadora}.
 \section{Llenadora/Taponadora}
 Las botellas son transportadas por un carrusel hasta la llenadora.
 
-La \textbf{llenadora/taponadora} de esta planta, es una KRONES Contiform, con 
+La \textbf{llenadora/taponadora} de esta planta, es una \emph{KRONES Con\-ti\-form}, con 
 una capacidad de trabajo de 12.000 a 14.000 botellas a la hora, dependiendo de
 la capacidad de las botellas que deben llenar.
 
@@ -271,8 +275,8 @@ botella fuera de la cinta transportadora. El \emph{encoder} cuenta los pulsos
 que deben pasar desde que un inspector encuentra una botella defectuosa, hasta
 que realmente esta botella pasa delante de uno de estos \emph{pusher}; es 
 entonces cuando se da la orden de que este actúe.
-
 \section{Etiquetadora}
+\imagen{etiqueta.jpg}{11}{Etiquetadora}{}
 Antes de llegar a la siguiente isla de automatización, encontramos una 
 \textbf{mesa de acumulación}. Esto se debe a que, a partir de este nivel, cada
 una de las máquinas que encontraremos es un 10\% más rápida que la anterior.
@@ -290,18 +294,20 @@ cinta cesa y de forma automática, también se para la etiquetadora.
 Llegados a este punto, encontramos a un gran número de botellas agrupadas 
 desplazándose hacia la etiquetadora, aunque, esta sólo pueda recibir las 
 botellas enfiladas. Es por ello que necesitamos un mecanismo intermedio que 
-las alinee. Para ello se cuenta con un \textbf{alineador}. Este sistema cuenta
-con una serie de estrechas cintas transportadoras, colocadas unas al lado de
-las otras, de forma paralela. Y cada cinta se desplaza a una velocidad 
-superior que la que se encuentra inmediatamente a su izquierda. Pues bien, el
-sistema funciona de la siguiente manera: las botellas llegan apiñadas por la 
-cinta más ancha y más lenta hasta que se encuentra en su camino con un 
-estrechamiento. En ese momento, las botellas que van primeras, son empujadas
-a una cinta más estrecha y más rápida. Las botellas que han sido empujadas a
-esta cinta, se encontrarán de nuevo con otro estrechamiento, cayendo de nuevo
-a otra cinta más rápida que la anterior. El resultado será que, cuando se 
-llega a la última cinta, todas las botellas que se encuentran en cabeza, 
-estarán alineadas.
+las alinee. Para ello se cuenta con una \textbf{alineadora} como la de la
+figura \ref{ali}. Este sistema cuenta con una serie de estrechas cintas
+transportadoras, colocadas unas al lado de las otras, de forma paralela. Y
+cada cinta se desplaza a una velocidad superior que la que se encuentra
+inmediatamente a su izquierda. Pues bien, el sistema funciona de la siguiente
+manera: las botellas llegan apiñadas por la cinta más ancha y más lenta hasta
+que se encuentra en su camino con un estrechamiento. En ese momento, las
+botellas que van primeras, son empujadas a una cinta más estrecha y más
+rápida. Las botellas que han sido empujadas a esta cinta, se encontrarán de
+nuevo con otro estrechamiento, cayendo de nuevo a otra cinta más rápida que
+la anterior. El resultado será que, cuando se  llega a la última cinta, todas
+las botellas que se encuentran en cabeza, estarán alineadas. 
+
+\imagen{alineadora.jpg}{5}{Alineadora de botellas}{ali}
 
 Por fin, las botellas llegán a la \textbf{etiquetadora}. Esta etiquetadora es 
 una \emph{KRONES Contiroll}, y tiene una capacidad de trabajo de más de 14.000 
@@ -316,7 +322,7 @@ girar sobre sí misma. Durante su camino por el cilindro, la botella se
 encuentra en primer lugar con el sistema de etiquetado. Este, está formado por
 una serie de rodillos: 
 \begin{itemize}
- \item Dos rodillos que contienen dos bobinas de etiquetas, una que va
+\item Dos rodillos que contienen dos bobinas de etiquetas, una que va
 suministrando las etiquetas y otra que está para cuando se termine el 
 primer rollo. La conmutación para cambiar entre uno y otro rollo se realiza 
 automáticamente, de forma que no hace falta parar la máquina para cambiar de 
@@ -336,6 +342,7 @@ la botella, que viene del cilindro principal, girando en sentido opuesto a
 este. La cola hace que la etiqueta se pegue a la botella y el movimiento
 giratorio, que la rodee por completo.
 \end{itemize}
+
 Siguiendo con el recorrido de la botella, antes de dejar el cilindro 
 principal, pasa por un \textbf{inspector de etiquetas}, consistente en un
 fotógrafo que compara fotos por contraste. Con ello averigua si la etiqueta
@@ -346,7 +353,7 @@ requisitos de contraste especificados.
 
 Finalmente, la botella se encuentra con otro cilindro en estrella, que la
 recoge y la deja en una cinta transportadora, donde se encuentra el 
-\emph{\emph{pusher}} mencionado anteriormente.
+\emph{pusher} mencionado anteriormente.
 
 \section{Agrupadora}
 A la salida de la etiquetadora encontramos otra mesa de acumulación, puesto 
@@ -354,10 +361,13 @@ que, como ocurría en el caso anterior, la siguiente isla de automatización,
 tiene la capacidad de trabajar un 10\% más rápido que la etiquetadora.
 
 Esta isla de automatización es la \textbf{agrupadora}. La agrupadora de esta 
-planta es una KRONES Variopac.
+planta es una \emph{KRONES Variopac}.
 
-Antes de llegar a la máquina, las botellas son ordenadas en filas de dos y 
-separadas mecánicamente en packs de cuatro. 
+Antes de llegar a la máquina, las botellas son ordenadas de dos en de dos y 
+separadas mecánicamente en packs de cuatro como se muestra en la figura
+\ref{agru}. 
+\imagen{agrupa.jpg}{12}{Agrupadora de botellas}{agru}
+
 
 El objetivo de la agrupadora es plastificar lotes de cuatro botellas para
 luego meterlos en palés.
@@ -376,17 +386,18 @@ envolvente se encoja y fije las botellas del pack.
 El último paso antes de formar los palés, es formar capas de packs con la 
 forma de un palé, en este caso europeo.
 
-En este caso, la paletizadora no es KRONES, como venía ocurriendo con las 
-islas de automatización anteriores, sino ELETTRIC80, una firma italiana.
+En este caso, la paletizadora no es \emph{KRONES}, como venía ocurriendo con las 
+islas de automatización anteriores, sino \emph{ELETTRIC80}, una firma italiana.
 
-La paletizadora consiste de: una cinta transportadora, por la que circulan los
-packs; y de tres robots de tipo angular, que se encargan de manipular los 
+Como puede observarse en la figura \ref{pal}, la paletizadora consiste de: una cinta transportadora, por la que circulan los
+packs; y de tres robots de tipo \textbf{angular}, que se encargan de manipular los 
 packs para formar capas, poder dichas capas en un palé y separar cada capa del 
 palé con un cartón, respectivamente.
+\imagen{pale.jpg}{12}{Paletizadora}{pal}
 
 Vamos a ver con detalle como trabajan cada uno de estos tres robots:
 \begin{itemize}
-\item El primer robot es un FANUC M410i, tiene una capacidad de carga de 50kg
+\item El primer robot es un \emph{FANUC M410i}, tiene una capacidad de carga de 50kg
 y es el encargado de formar las capas de palés. Tiene un actuador, consistente
 en una pinza, que se encarga de coger y soltar los palés en una determinada 
 posición y orientación en la misma cinta transportadora. De esta forma, cuando 
@@ -395,24 +406,25 @@ con la forma de un palé, como si se tratase de un tetris de packs. Gracias a
 unos sensores colocados en la cinta y a una memoria, el controlador del robot 
 conoce en cada momento donde están los packs que tiene que colocar y donde y 
 como tiene que colocarlos.
-\item El segundo robot es un FANUC M710i, tiene una capacidad de carga de 
+\item El segundo robot es un \emph{FANUC M710i}, tiene una capacidad de carga de 
 300kg y es el encargado de coger las capas formadas por el robot anterior y
-apilarlas sobre un palé. Este robot se limita a, cuando un final de carrera 
-colocado al final de la cinta transportadora detecta la llegada de una capa 
-de packs, desplaza su actuador, consistente en una pinza, sobre dicha capa,
-desciende para cogerla y la desplaza hasta una plataforma cercana donde se 
-encuentra un palé.
+apilarlas sobre un palé. Este robot se limita a desplazar su actuador cuando
+un final de carrera, colocado al final de la cinta, detecta la llegada de una
+capa de packs. El actuador consiste en una pinza que coge la capa y la
+desplaza hasta una plataforma cercana donde se encuentra el palé.
+
 \item El tercer robot es del mismo modelo que el anterior. Realiza un trabajo
-bastante sincronizado con este ya que, se encarga de, cuando el segundo robot
-ha colocado una capa de packs, este coge un cartón y lo coloca sobre dicha
-capa. Normalmente los palés constan de pilas de cuatro capas, para las 
-botellas de 2l; o de pilas de seis capas, para las botellas de 1'5l. Cuando se
-ha completado el palé, la plataforma con cadenas sobre la que se encuentra, se
-lo lleva. En ese momento, la labor de este robot será la de, en vez de colocar
-un nuevo cartón, coloca un nuevo palé sobre la plataforma. La labor del
-segundo robot, sin embargo, no se ve alterada, ya que su labor continua siendo
-la de coger capas de packs y colocarlos sobre los palés directamente, o sobre
-los cartones que tapan una capa anteriormente colocada.
+bastante sincronizado con este, ya que se encarga de coger un carton y
+colocarlo sobre una capa, cuando el segundo robot ha colocado una capa de
+packs. Normalmente los palés constan de pilas de cuatro capas, para las
+botellas de 2l; o de pilas de seis capas, para las botellas de 1'5l. Cuando
+se ha completado el palé, la plataforma con cadenas sobre la que se
+encuentra, se  lo lleva. En ese momento, la labor de este robot será la de,
+en vez de colocar un nuevo cartón, coloca un nuevo palé sobre la
+plataforma. La labor del segundo robot, sin embargo, no se ve alterada, ya
+que su labor continúa siendo la de coger capas de packs y colocarlos sobre
+los palés directamente, o sobre los cartones que tapan una capa anteriormente
+colocada. 
 \end{itemize}
 
 Los palés completados son recogidos por \textbf{vehículos guiados 
@@ -426,6 +438,7 @@ consistencia y robustez del palé, clave a la hora del proceso de transporte.
 
 Al igual que la anterior, este sistema tampoco es \emph{KRONES}, sino 
 \emph{ELETTRIC80}.
+\imagen{enfar.jpg}{10}{Enfardadora de palés}{}
 
 La enfardadora tiene tres partes bien diferenciadas:
 \begin{description}
@@ -434,11 +447,11 @@ La mesa de rotación es una sección de la propia cinta transportadora que tiene
 la funcionalidad de girar en un plano paralelo al del suelo, pero sobre un eje 
 perpendicular a este. Esta característica se aprovecha para, dado un rollo de 
 plástico colocado cerca del palé, ir enrollando con el plástico el contenido 
-del palé con varias capas, de arriba a abajo y viceversa, según las 
+del palé varias veces, de arriba a abajo y viceversa, según las 
 características del palé y de su contenido.
 \item \textbf{Pisón}
 Una vez colocado el palé encima de la mesa de rotación, se fija al suelo con 
-ayuda del pilón. El pilón es una columna anclada al suelo que posee, en su 
+ayuda del pisón. El pilón es una columna anclada al suelo que posee, en su 
 parte superior, una plataforma móvil que desciende hasta aprisionar contra la
 mesa de rotación al palé. Dicha plataforma gira junto con el giro de la mesa de
 rotación. Además, el pisón tiene la funcionalidad de medir la altura del palé 
@@ -458,7 +471,7 @@ poder continuar su labor. El operario por su parte puede cambiar en ese momento
 el rollo vacío del portarrollos para cuando vuelva a gastarse el rollo actual.
 \end{description}
 
-La enfardadora maneja una serie de variables de actuación según la naturaleza
+La enfardadora maneja una serie de variables de actuación según la na\-tu\-ra\-le\-za
 del palé a enfardar. Así se podrá configurar la velocidad de rotación de la 
 mesa y la tensión ejercida por el robot a la hora de colocar el rollo de 
 plástico para el forrado del palé.
@@ -469,26 +482,27 @@ automatizado se encargará de recoger el palé y llevarlo al almacen.
 
 \chapter{Beneficios de la automatización}
 Introducir nuevas tecnologías en una empresa tradicional como JGC siempre
-resulta un proceso complicado ya que no agrada a todo el mundo. Pero no se
-puede negar que ha supuesto un empujón muy importante tanto a nivel económico 
-como de producción para la empresa. Erróneamente se asocia el concepto de
+resulta un proceso complicado y que no agrada a todo el mundo. Pero no se
+puede negar que supuso un empujón muy importante tanto a nivel económico como
+a nivel de producción para la empresa. Errónamente se asocia el concepto de
 automatización con una solución para reducir la cantidad de empleados en
-plantilla, si bien, esta empresa es un ejemplo de que esto no sucede; ya que al
-mecanizar el proceso relacionado con el empaquetado y relleno de botellas,
-ayudó a la expansión de la empresa creando más puesto de trabajos, eso sí,
+plantilla, bien esta empresa es un ejemplo de que esto no sucede, ya que al
+mecanizar el proceso relacionado con el empaquetado y relleno de botellas
+ayudo a la expansión de la empresa creando más puesto de trabajos, eso sí
 distintos a los que había con anterioridad. Aparte del beneficio económico de
-reducir el número de empleados en ese área, hubo otros beneficios adicionales:
+reducir el número de empleados de ese área hubo otros beneficios adicionales
+mayores:
 
 \begin{description}
 \item \textbf{Aumento de la eficiencia}
 
-Los costos de producción se redujeron drásticamente al aumentar las unidades 
-de producto fabricadas por unidad de tiempo.
+Los costos de producción se redujeron drásticamente al aumentar las
+unidades de producto fabricadas por unidad de tiempo. 
 
 \item \textbf{Incremento del volumen de producción}
 
 Al aumentar el número de unidades fabricadas por unidad de tiempo se aumentó
-la cantidad de unidades producidas, así como el número de clientes a los que
+la cantidad de unidades producidas así como el número de clientes a los que
 poder atender.
 
 \item \textbf{Estandarización de los procesos}
@@ -506,21 +520,21 @@ humano, ya fuera debido al cansancio o a una negligencia.
 
 \item \textbf{Aumento de la competitividad}
 
-Más y mejor producto en menos cantidad de tiempo, tienen una clara repercusión
-en la competitividad de la empresa, haciendo más fácil el cubrir diversas áreas
-de comercio.
+Todas estas mejoras, más y mejor producto en menos cantidad de
+tiempo, tienen una clara repercusión en la competitividad de la empresa,
+haciendo más fácil el cubrir diversas áreas de comercio. 
 
 \item \textbf{Centralización de producción}
 
 JGC es una de las empresas más grandes e importantes de España en el sector,
-y como se ha hablado en la introducción consta solo de cuatro fábricas. Esto
+y como se ha hablado en la introducción consta solo de cuatro fabricas. Esto
 es debido a la gran productividad asociada al uso de la automatización, no es
 necesaria la construcción de mas sedes para cubrir las necesidad
 
 \end{description}
 
 Como demostración práctica de la utilidad de la automatización, la empresa
-esta haciendo frente a la crisis que experimentamos en estos días con una
+esta haciendo frente a la crisis que experimentamos en estos días con un
 rebaja considerable en los precios de sus productos. Para realizar esto, JGC,
 se está preparando para multiplicar la capacidad de producción 1,5 veces en
 2014. Con el incremento de la producción pretende atender la demanda en
@@ -531,13 +545,14 @@ de euros, lo que supone un incremento del 22\% respecto al año anterior, y
 elevar sus ventas un 12\%, hasta alcanzar los 650 millones de euros, en un
 año en el que ha recortado sus precios un 20\% de media para hacer frente al
 descenso provocado por la anteriormente nombrada crisis económica.
-
 \begin{thebibliography}{99}
 \bibitem{JGC} Página web de J.García Carrión: \url{http://www.donsimon.com}
 \bibitem{Kro} Página web de KRONES: \url{http://www.krones.de}
 \bibitem{You} Consulta de videos de máquinas:
   \url{http://www.youtube.com}
-\bibitem{Ele} Página web de ELETTRIC80:  \url{http://www.elettric80.it/}
+\bibitem{Ele} Página web de Elettric80:  \url{http://www.elettric80.it/}
 \end{thebibliography}
+%\bibliographystyle{plain} 
+%\bibliography{t2}
 
 \end{document}
