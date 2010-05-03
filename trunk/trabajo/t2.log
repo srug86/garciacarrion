@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2010.3.29)  30 APR 2010 23:52
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2010.2.10)  3 MAY 2010 19:32
 entering extended mode
  %&-line parsing enabled.
 **\input t2.tex
@@ -376,10 +376,23 @@ Now handling font encoding PD1 ...
 (/etc/texmf/tex/latex/config/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2006/08/22 v2.4 Connects package keyval with LaTeX options (
-HO)
+(/home/sergio/texmf/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+(/home/sergio/texmf/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+
+(/home/sergio/texmf/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
 )
+(/home/sergio/texmf/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
 Package hyperref Info: Option `colorlinks' set `true' on input line 2238.
 Package hyperref Info: Hyper figures OFF on input line 2288.
 Package hyperref Info: Link nesting OFF on input line 2293.
@@ -484,22 +497,22 @@ Package hyperref Info: Link coloring ON on input line 13.
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
 
-(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
-Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
+(/home/sergio/texmf/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 \c@section@level=\count101
 )
 LaTeX Info: Redefining \ref on input line 13.
 LaTeX Info: Redefining \pageref on input line 13.
- (./t2.out)
-(./t2.out)
+ (./t2.out) (./t2.out)
 \@outlinefile=\write4
 \openout4 = `t2.out'.
 
- (./inc/hyphenations.tex)
-<img/logoesi.pdf, id=55, 598.235pt x 845.1575pt>
+
+(./inc/hyphenations.tex) <img/logoesi.pdf, id=55, 598.235pt x 845.1575pt>
 File: img/logoesi.pdf Graphic file (type pdf)
- <use img/logoesi.pdf>
+
+<use img/logoesi.pdf>
 Overfull \hbox (55.33858pt too wide) in paragraph at lines 21--21
 [][] 
  []
@@ -572,7 +585,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1})
 has been already used, duplicate ignored
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.59 \item \textbf
+l.60 \item \textbf
                   {Huelva}, planta única en el mundo por su agricultura int...
  <./img/don_simon.jpg>]
 
@@ -594,116 +607,135 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1})
 has been already used, duplicate ignored
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.108 
-       <./img/planta.jpg>] [7]
+l.109 
+       <./img/planta.jpg>] <img/plano.jpg, id=277, 547.04375pt x 2533.465pt>
+File: img/plano.jpg Graphic file (type jpg)
+
+<use img/plano.jpg>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+Overfull \vbox (100.76889pt too high) has occurred while \output is active []
+
+
+[8pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.119 
+       <./img/plano.jpg>]
 Cap\'{\i }tulo 3.
-<img/proceso.pdf, id=281, 862.6719pt x 295.9878pt>
+<img/proceso.pdf, id=289, 862.6719pt x 295.9878pt>
 File: img/proceso.pdf Graphic file (type pdf)
  <use img/proceso.pdf>
-<img/preforma-20.pdf, id=283, 250.9375pt x 250.9375pt>
+<img/preforma-20.pdf, id=291, 250.9375pt x 250.9375pt>
 File: img/preforma-20.pdf Graphic file (type pdf)
 
-<use img/preforma-20.pdf> [8
+<use img/preforma-20.pdf> [9
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.136 
-       <./img/proceso.pdf>] [9pdfTeX warning (ext4): destination with the same 
-identifier (name{figure.3.2}) has been already used, duplicate ignored
+l.140 
+       <./img/proceso.pdf>] [10pdfTeX warning (ext4): destination with the same
+ identifier (name{figure.3.2}) has been already used, duplicate ignored
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.171 \chapter
+l.175 \chapter
               {Explicación de las islas de automatización} <./img/preforma-20
 .pdf>]
 Cap\'{\i }tulo 4.
-<img/sopla.jpg, id=304, 1606.0pt x 1204.5pt>
+<img/sopla.jpg, id=312, 1606.0pt x 1204.5pt>
 File: img/sopla.jpg Graphic file (type jpg)
  <use img/sopla.jpg>
-<img/molde2.jpg, id=305, 903.375pt x 1204.5pt>
+<img/molde2.jpg, id=313, 903.375pt x 1204.5pt>
 File: img/molde2.jpg Graphic file (type jpg)
- <use img/molde2.jpg> [10
+ <use img/molde2.jpg> [11
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.188 \imagen{molde2.jpg}{5}{Molde abierto}{mol}
+l.192 \imagen{molde2.jpg}{5}{Molde abierto}{mol}
                                                  <./img/sopla.jpg>]
-<img/molde.jpg, id=312, 1606.0pt x 1204.5pt>
+<img/molde.jpg, id=320, 1606.0pt x 1204.5pt>
 File: img/molde.jpg Graphic file (type jpg)
- <use img/molde.jpg> [11pdfTeX warning (ext4): destination with the same identi
+ <use img/molde.jpg> [12pdfTeX warning (ext4): destination with the same identi
 fier (name{figure.4.2}) has been already used, duplicate ignored
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.209 E
+l.213 E
        n total, la sopladora consta de 8 moldes como se ve en la figura \ref...
- <./img/molde2.jpg>] [12pdfTeX warning (ext4): destination with the same identi
+ <./img/molde2.jpg>] [13pdfTeX warning (ext4): destination with the same identi
 fier (name{figure.4.3}) has been already used, duplicate ignored
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.236 
-       <./img/molde.jpg>] <img/etiqueta.jpg, id=325, 1606.0pt x 1204.5pt>
+l.240 
+       <./img/molde.jpg>] <img/etiqueta.jpg, id=334, 1606.0pt x 1204.5pt>
 File: img/etiqueta.jpg Graphic file (type jpg)
 
 <use img/etiqueta.jpg>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13]
-[14pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4
+ [14]
+[15pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4
 }) has been already used, duplicate ignored
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.309 
+l.313 
        <./img/etiqueta.jpg>]
-<img/alineadora.jpg, id=338, 453.695pt x 702.625pt>
+<img/alineadora.jpg, id=346, 453.695pt x 702.625pt>
 File: img/alineadora.jpg Graphic file (type jpg)
  <use img/alineadora.jpg>
-[15pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5
+[16pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5
 }) has been already used, duplicate ignored
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.330 \item E
+l.334 \item E
              l siguiente rodillo, es el de la cortadora. Antes de llevar a d...
- <./img/alineadora.jpg>] <img/agrupa.jpg, id=344, 1606.0pt x 1204.5pt>
+ <./img/alineadora.jpg>] <img/agrupa.jpg, id=352, 1606.0pt x 1204.5pt>
 File: img/agrupa.jpg Graphic file (type jpg)
 
-<use img/agrupa.jpg> [16] [17pdfTeX warning (ext4): destination with the same i
+<use img/agrupa.jpg> [17] [18pdfTeX warning (ext4): destination with the same i
 dentifier (name{figure.4.6}) has been already used, duplicate ignored
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.391 
-       <./img/agrupa.jpg>] <img/pale.jpg, id=355, 1606.0pt x 1204.5pt>
+l.395 
+       <./img/agrupa.jpg>] <img/pale.jpg, id=363, 1606.0pt x 1204.5pt>
 File: img/pale.jpg Graphic file (type jpg)
 
-<use img/pale.jpg> [18pdfTeX warning (ext4): destination with the same identifi
+<use img/pale.jpg> [19pdfTeX warning (ext4): destination with the same identifi
 er (name{figure.4.7}) has been already used, duplicate ignored
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.415 
-       <./img/pale.jpg>] <img/enfar.jpg, id=361, 501.875pt x 376.40625pt>
-File: img/enfar.jpg Graphic file (type jpg)
+l.419 
+       <./img/pale.jpg>] <img/agv.jpg, id=371, 154.176pt x 115.632pt>
+File: img/agv.jpg Graphic file (type jpg)
 
-<use img/enfar.jpg>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19]
-[20pdfTeX warning (ext4): destination with the same identifier (name{figure.4.8
-}) has been already used, duplicate ignored
+<use img/agv.jpg> [20pdfTeX warning (ext4): destination with the same identifie
+r (name{figure.4.8}) has been already used, duplicate ignored
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.472 \end{description}
-                        <./img/enfar.jpg>] [21]
-Cap\'{\i }tulo 5.
-[22
+l.444 
+       <./img/agv.jpg>] <img/enfar.jpg, id=377, 501.875pt x 376.40625pt>
+File: img/enfar.jpg Graphic file (type jpg)
 
-] [23]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 549.
+<use img/enfar.jpg> [21pdfTeX warning (ext4): destination with the same identif
+ier (name{figure.4.9}) has been already used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.466 \item \textbf
+                   {Robot} <./img/enfar.jpg>] [22]
+Cap\'{\i }tulo 5.
+[23
+
+] [24]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 555.
 
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2007/01/14 v1.3 Font defs for Latin Modern
-) [24
+) [25
 
 ] (./t2.aux)
 
@@ -711,13 +743,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4496 strings out of 95087
- 58849 string characters out of 1183278
- 119174 words of memory out of 1500000
- 7463 multiletter control sequences out of 10000+50000
+ 4606 strings out of 95087
+ 60615 string characters out of 1183278
+ 121222 words of memory out of 1500000
+ 7558 multiletter control sequences out of 10000+50000
  72748 words of font info for 56 fonts, out of 1200000 for 2000
  42 hyphenation exceptions out of 8191
- 38i,12n,43p,256b,463s stack positions out of 5000i,500n,6000p,200000b,5000s
+ 39i,12n,43p,271b,458s stack positions out of 5000i,500n,6000p,200000b,5000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/publi
@@ -726,9 +758,9 @@ xmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
 7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on t2.pdf (24 pages, 3903736 bytes).
+Output written on t2.pdf (25 pages, 4290552 bytes).
 PDF statistics:
- 447 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 131072)
- 178 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 459 PDF objects out of 1000 (max. 8388607)
+ 58 named destinations out of 1000 (max. 131072)
+ 188 words of extra memory for PDF output out of 10000 (max. 10000000)
 
