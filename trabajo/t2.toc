@@ -6,8 +6,8 @@
 \contentsline {chapter}{\numberline {4}Explicaci\IeC {\'o}n de las islas de automatizaci\IeC {\'o}n}{11}{chapter.4}
 \contentsline {section}{\numberline {4.1}Sopladora}{11}{section.4.1}
 \contentsline {section}{\numberline {4.2}Llenadora/Taponadora}{13}{section.4.2}
-\contentsline {section}{\numberline {4.3}Etiquetadora}{15}{section.4.3}
-\contentsline {section}{\numberline {4.4}Agrupadora}{17}{section.4.4}
-\contentsline {section}{\numberline {4.5}Paletizadora}{18}{section.4.5}
-\contentsline {section}{\numberline {4.6}Enfardadora}{21}{section.4.6}
-\contentsline {chapter}{\numberline {5}Beneficios de la automatizaci\IeC {\'o}n}{23}{chapter.5}
+\contentsline {section}{\numberline {4.3}Etiquetadora}{16}{section.4.3}
+\contentsline {section}{\numberline {4.4}Agrupadora}{18}{section.4.4}
+\contentsline {section}{\numberline {4.5}Paletizadora}{20}{section.4.5}
+\contentsline {section}{\numberline {4.6}Enfardadora}{22}{section.4.6}
+\contentsline {chapter}{\numberline {5}Beneficios de la automatizaci\IeC {\'o}n}{25}{chapter.5}
