@@ -3,11 +3,11 @@
 \contentsline {section}{\numberline {1.1}Historia breve}{5}{section.1.1}
 \contentsline {chapter}{\numberline {2}Objetivo y motivaci\IeC {\'o}n del sistema}{6}{chapter.2}
 \contentsline {chapter}{\numberline {3}Descripci\IeC {\'o}n del proceso}{9}{chapter.3}
-\contentsline {chapter}{\numberline {4}Explicaci\IeC {\'o}n de las islas de automatizaci\IeC {\'o}n}{11}{chapter.4}
-\contentsline {section}{\numberline {4.1}Sopladora}{11}{section.4.1}
-\contentsline {section}{\numberline {4.2}Llenadora/Taponadora}{13}{section.4.2}
-\contentsline {section}{\numberline {4.3}Etiquetadora}{16}{section.4.3}
-\contentsline {section}{\numberline {4.4}Agrupadora}{18}{section.4.4}
-\contentsline {section}{\numberline {4.5}Paletizadora}{20}{section.4.5}
-\contentsline {section}{\numberline {4.6}Enfardadora}{22}{section.4.6}
-\contentsline {chapter}{\numberline {5}Beneficios de la automatizaci\IeC {\'o}n}{25}{chapter.5}
+\contentsline {chapter}{\numberline {4}Explicaci\IeC {\'o}n de las islas de automatizaci\IeC {\'o}n}{12}{chapter.4}
+\contentsline {section}{\numberline {4.1}Sopladora}{12}{section.4.1}
+\contentsline {section}{\numberline {4.2}Llenadora/Taponadora}{14}{section.4.2}
+\contentsline {section}{\numberline {4.3}Etiquetadora}{17}{section.4.3}
+\contentsline {section}{\numberline {4.4}Agrupadora}{19}{section.4.4}
+\contentsline {section}{\numberline {4.5}Paletizadora}{21}{section.4.5}
+\contentsline {section}{\numberline {4.6}Enfardadora}{23}{section.4.6}
+\contentsline {chapter}{\numberline {5}Beneficios de la automatizaci\IeC {\'o}n}{26}{chapter.5}
