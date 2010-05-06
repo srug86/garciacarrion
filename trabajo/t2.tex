@@ -17,8 +17,10 @@
 
 % Portada
 \portada{Automatización Industrial}
-{Trabajo:}{Automatización del proceso de embotellado en\\ J. García Carrión(Daimiel)}
-{Sergio de la Rubia García-Carpintero\\Miguel Millán Sánchez-Grande}{30 de Abril de 2010}
+{Trabajo:}{Automatización del proceso de embotellado en\\ J. García Carrión
+(Daimiel)}
+{Sergio de la Rubia García-Carpintero\\Miguel Millán Sánchez-Grande}
+{30 de Abril de 2010}
 
 % Licencia
 \licencia{Sergio de la Rubia García-Carpintero, Miguel Millán Sánchez-Grande}
@@ -166,6 +168,22 @@ posteriormente colocarlos encima de un palé.
 para evitar pérdidas en el transporte o que el producto sufra algún daño.
 
 \end{itemize}
+
+Cada una de las islas de automatización está controlada por un \textbf{PLC}.
+Los PLC empleados son \emph{SIEMENS S7300). Cada uno de ellos carga y guarda 
+unos parámetros o "recetas'', que son los que rigen el funcionamiento de este 
+controlador, en un PC. Los PCs empleados tienen el S.O. Windows XP (Embedded) y
+un software \textbf{SCADA}, proporcionado por el fabricante de la máquina,
+llamado \emph{ZENON}, desarrollado por \emph{COPA-DATA}. La comunicación entre 
+PC y PLC se desarrolla por Ethernet, aunque también puede hacerse mediante 
+R232.
+
+Hay que destacar que las máquinas trabajan de forma autónoma, es decir, no se
+comunican unas con otras. Simplemente, mediante sensores, controlan las
+entradas y las gestionan. No obstante, también hay que decir que estas máquinas
+tienen la posibilidad de ser gestionadas de una forma centralizada, cosa que
+es posible que se haga a corto o medio plazo en la planta.
+
 Aparte de las diversas islas de automatización de las que se han hablado, el
 transporte del producto de una de ellas a la siguiente, también está 
 au\-to\-ma\-ti\-za\-do. Esto se lleva a cabo mediante diversas \textbf{cintas 
@@ -210,12 +228,13 @@ con un controlador PID, que maneja el traductor de presión y la válvula
 modulante de presión.
 
 \imagen{molde.jpg}{9}{Moldes de la sopladora}{molde}
-En total, la sopladora consta de 8 moldes como se ve en la figura \ref{molde}. Estos se encuentran dispuestos 
-sobre una superficie giratoria que, mientras gira, va cogiendo las preformas 
-que se le van sirviendo para meterlas en cada uno de los moldes. Una vez 
-formada cada botella, aprovechando el giro del sistema, se vuelve a abrir el 
-molde y va saliendo del sistema por el lado opuesto al que entró, hacia la 
-siguiente isla de automatización, la \textbf{llenadora}.
+En total, la sopladora consta de 8 moldes como se ve en la figura \ref{molde}.
+Estos se encuentran dispuestos sobre una superficie giratoria que, mientras 
+gira, va cogiendo las preformas que se le van sirviendo para meterlas en cada
+uno de los moldes. Una vez formada cada botella, aprovechando el giro del
+sistema, se vuelve a abrir el molde y va saliendo del sistema por el lado
+opuesto al que entró, hacia la siguiente isla de automatización, la
+\textbf{llenadora}.
 
 \section{Llenadora/Taponadora}
 Las botellas son transportadas por un carrusel hasta la llenadora.
@@ -390,31 +409,35 @@ donde se calientan a una temperatura de unos 235ºC, haciendo que el plástico
 envolvente se encoja y fije las botellas del pack.
 
 \section{Paletizadora}
-El último paso antes de formar los palés, es formar capas de packs con la 
-forma de un palé, en este caso europeo.
+El último paso antes de obtener un palé, es formar las capas de packs que lo
+componen y apilarlas.
 
-En este caso, la paletizadora no es \emph{KRONES}, como venía ocurriendo con las 
-islas de automatización anteriores, sino \emph{ELETTRIC80}, una firma italiana.
+En este caso, la paletizadora no es \emph{KRONES}, como venía ocurriendo con 
+las islas de automatización anteriores, sino \emph{ELETTRIC80}, una firma
+italiana.
 
-Como puede observarse en la figura \ref{pal}, la paletizadora consiste de: una cinta transportadora, por la que circulan los
-packs; y de tres robots de tipo \textbf{angular}, que se encargan de manipular los 
-packs para formar capas, poder dichas capas en un palé y separar cada capa del 
-palé con un cartón, respectivamente.
+Como puede observarse en la figura \ref{pal}, la paletizadora consiste de: una
+cinta transportadora, por la que circulan los packs; y de tres robots de tipo
+\textbf{angular}, que se encargan de manipular los packs para formar capas,
+poder dichas capas en un palé y separar cada capa del palé con un cartón,
+respectivamente.
+
 \imagen{pale.jpg}{12}{Paletizadora}{pal}
 
 Vamos a ver con detalle como trabajan cada uno de estos tres robots:
 \begin{itemize}
-\item El primer robot es un \emph{FANUC M410i}, tiene una capacidad de carga de 50kg
-y es el encargado de formar las capas de palés. Tiene un actuador, consistente
-en una pinza, que se encarga de coger y soltar los palés en una determinada 
-posición y orientación en la misma cinta transportadora. De esta forma, cuando 
-los packs llegan al final de la cinta, llegan colocados para formar un mosaico 
-con la forma de un palé, como si se tratase de un tetris de packs. Gracias a 
-unos sensores colocados en la cinta y a una memoria, el controlador del robot 
-conoce en cada momento donde están los packs que tiene que colocar y donde y 
-como tiene que colocarlos.
-\item El segundo robot es un \emph{FANUC M710i}, tiene una capacidad de carga de 
-300kg y es el encargado de coger las capas formadas por el robot anterior y
+\item El primer robot es un \emph{FANUC M410i}, tiene una capacidad de carga de
+50kg y es el encargado de formar las capas del palé. Tiene un actuador,
+consistente en una pinza, que se encarga de coger y soltar los packs en una
+determinada posición y orientación en la misma cinta transportadora. De esta
+forma, cuando los packs llegan al final de la cinta, llegan colocados para 
+formar un mosaico con la forma de un palé, como si se tratase de un tetris de
+packs. Gracias a unos sensores colocados en la cinta y a una memoria, el
+controlador del robot conoce en cada momento donde están los packs que tiene
+que colocar y donde y como tiene que colocarlos.
+
+\item El segundo robot es un \emph{FANUC M710i}, tiene una capacidad de carga
+de 300kg y es el encargado de coger las capas formadas por el robot anterior y
 apilarlas sobre un palé. Este robot se limita a desplazar su actuador cuando
 un final de carrera, colocado al final de la cinta, detecta la llegada de una
 capa de packs. El actuador consiste en una pinza que coge la capa y la
@@ -433,6 +456,10 @@ que su labor continúa siendo la de coger capas de packs y colocarlos sobre
 los palés directamente, o sobre los cartones que tapan una capa anteriormente
 colocada. 
 \end{itemize}
+
+Tanto la cinta transportadora, como los robots, se encuentran conectados a un
+concentrador de red con el PLC que los controla. Esto posibilita llevar un
+control coordinado de todo el proceso.
 
 Los palés completados son recogidos por unos \textbf{vehículos guiados 
 automáticamente} (o \emph{AGVs}), similares al que podemos ver en la figura
@@ -468,23 +495,24 @@ rotación. Además, el pisón tiene la funcionalidad de medir la altura del pal�
 para decírselo al robot. Esto lo hace ayudado por una resistencia lineal
 variable; el valor de la resistencia determinará la altura del palé.
 \item \textbf{Robot}
-La enfardadora posee además un robot. Este es el encargado de colocar el rollo 
-de plástico de tal forma que, el movimiento de la mesa de rotación, vaya 
-enrollando el plástico en el palé. El movimiento del brazo robótico posibilita 
-forrar el palé de arriba a abajo con un simple movimiento ascendente o 
-descendente del portador del rollo. Pero además, este modelo, también permite 
-cambiar de rollo de enfardado sin tener que parar la máquina. El robot posee 
-dos rollos de plástico; uno es el que se está utilizando para realizar el 
-enfardado y el otro es el de repuesto, cuando se acaba el rollo, el propio 
-robot desecha el rollo gastado y acude a su portarrollos a por un recambio para
-poder continuar su labor. El operario por su parte puede cambiar en ese momento
-el rollo vacío del portarrollos para cuando vuelva a gastarse el rollo actual.
+La enfardadora posee además un robot de tipo \textbf{angular}. Este es el
+encargado de colocar el rollo de plástico de tal forma que, el movimiento de la
+mesa de rotación, vaya enrollando el plástico en el palé. El movimiento del
+brazo robótico posibilita forrar el palé de arriba a abajo con un simple
+movimiento ascendente o descendente del portador del rollo. Pero además, este
+modelo, también permite cambiar de rollo de enfardado sin tener que parar la
+máquina. El robot posee dos rollos de plástico; uno es el que se está
+utilizando para realizar el enfardado y el otro es el de repuesto, cuando se
+acaba el rollo, el propio robot desecha el rollo gastado y acude a su
+portarrollos a por un recambio para poder continuar su labor. El operario por
+su parte puede cambiar en ese momento el rollo vacío del portarrollos para
+cuando vuelva a gastarse el rollo actual.
 \end{description}
 
-La enfardadora maneja una serie de variables de actuación según la na\-tu\-ra\-le\-za
-del palé a enfardar. Así se podrá configurar la velocidad de rotación de la 
-mesa y la tensión ejercida por el robot a la hora de colocar el rollo de 
-plástico para el forrado del palé.
+La enfardadora maneja una serie de variables de actuación según la
+na\-tu\-ra\-le\-za del palé a enfardar. Así se podrá configurar la velocidad de
+rotación de la mesa y la tensión ejercida por el robot a la hora de colocar el
+rollo de plástico para el forrado del palé.
 
 Los palés forrados continúan por la cinta transportadora contigua hasta el 
 extremo de esta. Una vez allí, una de los numerosos vehículos con control 
