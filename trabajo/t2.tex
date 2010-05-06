@@ -57,7 +57,7 @@ eficiente de Europa. Sobre ella se centra este trabajo.
 \item \textbf{Gador (Almería)}, inaugurada en el año 2003, es una Planta 
 especia\-li\-za\-da en tratamiento de vegetales (gazpacho, cremas de verduras
 na\-tu\-ra\-les y caldos), con una capacidad de 120 millones de Kilos/año. La
-tecnología de esta planta se ha proyectado con Investigación y Desarrollo 
+tecnología de esta planta se ha proyectado con Investigación y De\-sa\-rro\-llo
 propio, único en la elaboración de productos naturales vegetales. 
 \item \textbf{Huelva}, planta única en el mundo por su agricultura integrada.
 \end{itemize}
@@ -170,13 +170,13 @@ para evitar pérdidas en el transporte o que el producto sufra algún daño.
 \end{itemize}
 
 Cada una de las islas de automatización está controlada por un \textbf{PLC}.
-Los PLC empleados son \emph{SIEMENS S7300). Cada uno de ellos carga y guarda 
-unos parámetros o "recetas'', que son los que rigen el funcionamiento de este 
-controlador, en un PC. Los PCs empleados tienen el S.O. Windows XP (Embedded) y
-un software \textbf{SCADA}, proporcionado por el fabricante de la máquina,
-llamado \emph{ZENON}, desarrollado por \emph{COPA-DATA}. La comunicación entre 
-PC y PLC se desarrolla por Ethernet, aunque también puede hacerse mediante 
-R232.
+Los PLC empleados son \emph{SIEMENS S7300}. Cada uno de ellos carga y guarda 
+unos parámetros o ``recetas'', que son los que rigen el funcionamiento de este 
+controlador, en un PC. Los PCs empleados tienen el S.O.
+\emph{Windows XP (Embedded)} y un software \textbf{SCADA}, proporcionado por
+el fabricante de la máquina, llamado \emph{ZENON}, desarrollado por 
+\emph{COPA-DATA}. La comunicación entre PC y PLC se desarrolla por Ethernet,
+aunque también puede hacerse mediante R232.
 
 Hay que destacar que las máquinas trabajan de forma autónoma, es decir, no se
 comunican unas con otras. Simplemente, mediante sensores, controlan las
@@ -295,7 +295,7 @@ ser retirada de la cadena.
 
 Como se dijo anteriormente, este sistema controla mediante un \emph{encoder} 
 las botellas defectuosas para retirarlas de la cadena. Las botellas son 
-"literalmente'' empujadas fuera de la cadena, en su fase de transporte, 
+``literalmente'' empujadas fuera de la cadena, en su fase de transporte, 
 mediante un \textbf{expulsador} (o \emph{pusher}). Este sistema empuja a la
 botella fuera de la cinta transportadora. El \emph{encoder} cuenta los pulsos
 que deben pasar desde que un inspector encuentra una botella defectuosa, hasta
@@ -435,14 +435,12 @@ formar un mosaico con la forma de un palé, como si se tratase de un tetris de
 packs. Gracias a unos sensores colocados en la cinta y a una memoria, el
 controlador del robot conoce en cada momento donde están los packs que tiene
 que colocar y donde y como tiene que colocarlos.
-
 \item El segundo robot es un \emph{FANUC M710i}, tiene una capacidad de carga
 de 300kg y es el encargado de coger las capas formadas por el robot anterior y
 apilarlas sobre un palé. Este robot se limita a desplazar su actuador cuando
 un final de carrera, colocado al final de la cinta, detecta la llegada de una
 capa de packs. El actuador consiste en una pinza que coge la capa y la
 desplaza hasta una plataforma cercana donde se encuentra el palé.
-
 \item El tercer robot es del mismo modelo que el anterior. Realiza un trabajo
 bastante sincronizado con este, ya que se encarga de coger un carton y
 colocarlo sobre una capa, cuando el segundo robot ha colocado una capa de
@@ -456,7 +454,6 @@ que su labor continúa siendo la de coger capas de packs y colocarlos sobre
 los palés directamente, o sobre los cartones que tapan una capa anteriormente
 colocada. 
 \end{itemize}
-
 Tanto la cinta transportadora, como los robots, se encuentran conectados a un
 concentrador de red con el PLC que los controla. Esto posibilita llevar un
 control coordinado de todo el proceso.
