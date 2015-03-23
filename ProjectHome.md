@@ -1,0 +1,1 @@
+Trabajo optativo de la asignatura de Automatización Industrial consistente en la explicación del proceso de automatización de la producción de productos "Don Simón" en una de las plantas de la empresa J. García Carrión
